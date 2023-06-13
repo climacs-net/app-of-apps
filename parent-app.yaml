@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/climacs-net/hello-world-my-app.git
+    repoURL: https://github.com/climacs-net/app-of-apps.git
     targetRevision: HEAD
     path: apps/cat-website
   destination:
@@ -23,7 +23,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/climacs-net/hello-world-my-app.git
+    repoURL: https://github.com/climacs-net/app-of-apps.git
     targetRevision: HEAD
     path: apps/nginx-myapp
   destination:
@@ -40,7 +40,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/climacs-net/hello-world-my-app.git
+    repoURL: https://github.com/climacs-net/app-of-apps.git
     targetRevision: HEAD
     path: apps/tomcat-myapp
   destination:
