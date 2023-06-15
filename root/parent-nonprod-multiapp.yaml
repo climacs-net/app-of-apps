@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: nginx-myapp
+  name: app-of-apps
   namespace: argocd
 spec:
   project: default
@@ -13,21 +13,6 @@ spec:
     server: https://kubernetes.default.svc
     namespace: argocd
   syncPolicy:
-    automated: {}
----
-apiVersion: argoproj.io/v1alpha1
-kind: Application
-metadata:
-  name: tomcat-myapp
-  namespace: argocd
-spec:
-  project: default
-  source:
-    repoURL: https://github.com/climacs-net/app-of-apps.git
-    targetRevision: tabish-app-of-apps
-    path: ./applications/nonprod
-  destination:
-    server: https://kubernetes.default.svc
-    namespace: argocd
-  syncPolicy:
-    automated: {}
+    automated:
+      prune: true
+      selfHeal: true
