@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/climacs-net/app-of-apps.git
     targetRevision: tabish-app-of-apps
-    path: manifest/nonprod/cat-website
+    path: ./manifest/nonprod/cat-website
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
