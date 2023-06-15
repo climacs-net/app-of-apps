@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/climacs-net/app-of-apps.git
     targetRevision: tabish-app-of-apps
-    path: manifest/nonprod/nginx
+    path: ./manifest/nonprod/nginx
   destination:
     server: https://kubernetes.default.svc
     namespace: nginx-myapp
