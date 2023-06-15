@@ -24,7 +24,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/climacs-net/app-of-apps.git
-    argetRevision: tabish-app-of-apps
+    targetRevision: tabish-app-of-apps
     path: ./applications/nonprod
   destination:
     server: https://kubernetes.default.svc
