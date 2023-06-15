@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cat-website
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/climacs-net/app-of-apps.git
+    targetRevision: tabish-app-of-apps
+    path: manifest/nonprod/cat-website
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argocd
+  syncPolicy:
+    automated: {}
